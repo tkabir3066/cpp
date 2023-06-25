@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 
 using namespace std;
 
@@ -7,18 +6,24 @@ using namespace std;
 int main()
 {
 
-  int marks[5];
+   int marks[5];
 
-  for(int i=0; i<=4; i++){
-      cout<<"Marks for Student "<<i+1<<" = ";
-      cin>>marks[i];
-  }
+    cout << "Enter marks : ";
+    for (int i = 0; i < 5; i++)
+    {
 
-cout<<"Marks are: ";
-  for(int i=0; i<=4; i++){
+        // cout << "Marks of student " << i + 1 << " = ";
+        cin >> marks[i];
+    }
 
-     cout<<marks[i]<<" ";
-  }
+    // cout << "Marks are : ";
 
-    getch();
+    cout << endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Marks of student " << i + 1 << " = ";
+        cout << marks[i] << endl;
+    }
+
+    return 0;
 }
