@@ -9,7 +9,7 @@ int main()
 
     // input
 
-    cout << "Enter the elements for matrix : " << endl;
+    cout << "Enter elements for a matrix : " << endl;
 
     for (int row = 0; row < 2; row++)
     {
@@ -22,7 +22,8 @@ int main()
     }
 
     cout << endl;
-    // print
+
+    // printing a matrix
     for (int row = 0; row < 2; row++)
     {
 
