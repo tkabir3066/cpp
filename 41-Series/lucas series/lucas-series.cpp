@@ -1,54 +1,54 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 
 using namespace std;
-
 
 int main()
 {
 
-/* 
-int n, first=2, second=1, count=0, i=3;
+  // 2 1 3 4 7 11 18 29 47
 
-cin>>n;
+    /*
+  int n, first=2, second=1, count=0, i=3;
 
-
-while(i<=n){
-   count=first+second;
-   first=second;
-   second=count;
-   cout<<count;
-
-   i++;
-}
- */
+  cin>>n;
 
 
-int n, first=2, second=1, count, i=0;
-cout<<"Enter the terms: ";
-cin>>n;
+  while(i<=n){
+     count=first+second;
+     first=second;
+     second=count;
+     cout<<count;
 
+     i++;
+  }
+   */
 
-while(i<=n){
-  if(i==0){
-    cout<<2<<" ";
+  int n, first = 2, second = 1, count, i = 0;
+  cout << "Enter the terms: ";
+  cin >> n;
 
+  while (i <= n)
+  {
+    if (i == 0)
+    {
+      cout << 2 << " ";
+    }
+
+    else if (i == 1)
+    {
+      cout << 1 << " ";
+    }
+    else
+    {
+      count = first + second;
+      first = second;
+      second = count;
+      cout << count << " ";
+    }
+
+    i++;
   }
 
-  else if(i==1){
-    cout<<1<<" ";
-  }
-  else{
-   count=first+second;
-   first=second;
-   second=count;
-   cout<<count<<" ";
-  }
-
-   i++;
-}
-
-
-
-    getch();
+  getch();
 }

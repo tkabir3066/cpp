@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    // 2^2 * 4^2 * 6^2 * ... * n^2
+    int n, mul = 1;
+
+    cout << "Enter the value of n : ";
+    cin >> n;
+
+    int i = 2;
+
+    while (i <= n)
+    {
+        mul = mul * i * i;
+        i += 2;
+    }
+
+    cout << "Mul= " << mul;
+    return 0;
+}
